@@ -30,9 +30,9 @@ def main():
             help='Profile file output.')
     args = parser.parse_args()
 
-    if args.action[0] == 'run' and len(args.action) == 2:
+    if len(args.action) == 2  and args.action[0] == 'run' :
         run(args)
-    elif args.action[0] == 'html':
+    elif len(args.action) == 1 and args.action[0] == 'html':
         html(args)
     else:
         print 'Unknown action: run <module> | html'

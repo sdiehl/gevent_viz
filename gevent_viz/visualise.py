@@ -110,7 +110,7 @@ window.onload = function() {
 
         print '};</script>'
 
-        print '<div style="z-index: 1; position: absolute; right: 100px; top: 0px; width: 150px; height: 100px;">%d concurrent eventlets</div>' % self.max_x
+        print '<div style="z-index: 1; position: absolute; right: 100px; top: 0px; width: 150px; height: 100px;">%d concurrent greenlets</div>' % self.max_x
 
         # Print out a horizontal bar across the page to mark where the program ended
         print '<div style="z-index: 1; position: absolute; left: 0px; top: %spx; height: 3px; width: %spx; border: 1px solid white; background-color: black"> </div>' % (
